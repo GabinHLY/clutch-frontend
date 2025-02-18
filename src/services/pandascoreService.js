@@ -1,4 +1,5 @@
 const API_BASE_URL = "http://localhost:3000/api/pandascore";
+const ODDS_API_BASE_URL = "http://localhost:3000/api/odds";  // ✅ Nouvelle API pour récupérer les cotes
 
 // ✅ Récupérer les matchs à venir de Valorant
 export async function getUpcomingValorantMatches() {
@@ -33,5 +34,17 @@ export async function getTeamByName(name) {
 // ✅ Récupérer les stats d’une équipe par ID
 export async function getTeamStatsById(teamId) {
   const response = await fetch(`${API_BASE_URL}/team/stats/${teamId}`);
+  return response.json();
+}
+
+// ✅ Récupérer les cotes des matchs sélectionnés (nouvelle fonction)
+export async function getMatchOdds(matches) {
+  const response = await fetch(`${ODDS_API_BASE_URL}/calculate`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ matches }),
+  });
   return response.json();
 }

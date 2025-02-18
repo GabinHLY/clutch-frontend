@@ -15,7 +15,7 @@ const UpcomingMatchCard = ({ match }) => {
 
   return (
     <div onClick={() => navigate(`/match/${match.id}`, { state: { match } })} className="hover:scale-105 transition-transform">
-      <div className="flex items-center bg-gray-800 rounded-lg shadow-md border border-gray-700 p-3">
+      <div className="flex items-center bg-gray-800 rounded-lg shadow-md border border-gray-700 p-3 ">
         {/* Affichage de la série */}
         <div className="flex items-center gap-2 w-1/4">
           {match.serie?.logo && (

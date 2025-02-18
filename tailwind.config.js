@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ["Montserrat", "sans-serif"], // Ajoute Montserrat comme font principale
+      },
+    },
   },
   plugins: [],
 };

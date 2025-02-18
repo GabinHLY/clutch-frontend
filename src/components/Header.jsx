@@ -12,7 +12,7 @@ const Header = () => {
   return (
     <header className="bg-gray-800 shadow-lg py-4">
       <div className="container mx-auto flex justify-between items-center px-6">
-        <Link to="/" className="text-indigo-400 text-2xl font-bold">Clutch</Link>
+        <Link to="/" className="text-white text-2xl font-black italic">CLUTCH</Link>
         <nav className="flex space-x-6">
           <Link to="/" className="text-gray-300 hover:text-indigo-400">Accueil</Link>
           <Link to="/matches" className="text-gray-300 hover:text-indigo-400">Matchs</Link>

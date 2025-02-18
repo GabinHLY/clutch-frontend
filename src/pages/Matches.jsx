@@ -36,18 +36,18 @@ const Matches = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white py-10 px-4">
+    <div className="min-h-screen bg-gray-900 text-white py-10 px-10">
       {loading && <p className="text-center text-gray-400 text-lg">Chargement des matchs...</p>}
       {error && <p className="text-center text-red-400 text-lg">{error}</p>}
       {!loading && !error && (
         <>
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-6">
             <span className="w-3 h-3 bg-red-500 rounded-full mr-2"></span>
             <h2 className="text-white text-xl font-semibold">LIVE</h2>
           </div>
           <LiveMatchList matches={liveMatches} />
 
-          <div className="flex items-center mb-2">
+          <div className="flex items-center mb-6 mt-10">
             <span className="w-3 h-3 bg-indigo-500 rounded-full mr-2"></span>
             <h2 className="text-white text-xl font-semibold">UPCOMING</h2>
           </div>
