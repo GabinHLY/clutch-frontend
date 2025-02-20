@@ -44,13 +44,13 @@ const Home = () => {
           <h2 className="text-white text-2xl font-semibold">COMING SOON</h2>
           <div className="flex justify-center items-center gap-60 mt-4">
             <div className="flex justify-center w-32">
-              <img src="../public/assets/img/lol.png" alt="League of Legends" className="h-16" />
+              <img src="../assets/img/lol.png" alt="League of Legends" className="h-16" />
             </div>
             <div className="flex justify-center w-32">
-              <img src="../public/assets/img/rl.png" alt="Rocket League" className="h-16" />
+              <img src="../assets/img/rl.png" alt="Rocket League" className="h-16" />
             </div>
             <div className="flex justify-center w-32">
-              <img src="../public/assets/img/csgo.png" alt="CSGO" className="h-16" />
+              <img src="../assets/img/csgo.png" alt="CSGO" className="h-16" />
             </div>
           </div>
         </div>
